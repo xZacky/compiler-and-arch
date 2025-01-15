@@ -13,6 +13,7 @@ A list of awesome compilers and optimization techniques (applicable to compilers
 - [Contents](#contents)
 - [List of Conferences and Journals Considered](#list-of-conferences-and-journals-considered)
 - [Compiler Toolchain](#compiler-toolchain)
+- [Compiler for Distributed](#compiler-distributed)
 - [Compilers for AI chips](#compilers-for-ai-chips)
 - [Compilers for PIM](#compilers-for-pim)
 - [Compilers for Brain-inspired Hardware](#compilers-for-brain-inspired-hardware)
@@ -67,6 +68,18 @@ A list of awesome compilers and optimization techniques (applicable to compilers
 
 - Close-source (binary available)
     - [TensorRT](https://developer.nvidia.com/tensorrt) with some components open-source at [Github](https://github.com/NVIDIA/TensorRT).
+
+
+## Compiler for Distributed
+- Programming for Distributed
+    - [Optimizing Distributed ML Communication with Fused Computation-Collective Operations](https://ieeexplore.ieee.org/document/10793160/) **SC 2024**. Kishore Punniyamurthy, Khaled Hamidouche, and Bradford M. Beckmann. _AMD_.
+    - [Breaking the Computation and Communication Abstraction Barrier in Distributed Machine Learning Workloads](https://dl.acm.org/doi/10.1145/3503222.3507778) **ASPLOS 2022**. Abhinav Jangda, Jun Huang, Guodong Liu, Amir Hossein Nodehi Sabet, Saeed Maleki, Youshan Miao, Madanlal Musuvathi, Todd Mytkowicz, and Olli Saarikivi. _University of Massachusetts Amherst_.
+    - [DISTAL: The Distributed Tensor Algebra Compiler](http://tensor-compiler.org/files/yadav-pldi22-distal.pdf) **PLDI 2022**. Rohan Yadav, Alex Aiken, and Fredrik Kjolstad. _Stanford University_.
+- Scheduling for Distributed
+    - [Overlap Communication with Dependent Computation via Decomposition in Large Deep Learning Models](https://dl.acm.org/doi/10.1145/3567955.3567959) **ASPLOS 2023**. Shibo Wang, Jinliang Wei, Amit Sabne, Andy Davis, Berkin Ilbeyi, Blake Hechtman, Dehao Chen, Karthik Srinivasa Murthy, Marcello Maggioni, Qiao Zhang, Sameer Kumar, Tongfei Guo, Yuanzhong Xu, and Zongwei Zhou. _Google_.
+    - [Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](https://arxiv.org/abs/2201.12023) **OSDI 2022**. Lianmin Zheng, Zhuohan Li, Hao Zhang, Yonghao Zhuang, Zhifeng Chen, Yanping Huang, Yida Wang, Yuanzhong Xu, Danyang Zhuo, Joseph E. Gonzalez, Ion Stoica. _UC Berkeley_
+    - [VirtualFlow: Decoupling Deep Learning Models from the Underlying Hardware](https://proceedings.mlsys.org/paper/2022/hash/2723d092b63885e0d7c260cc007e8b9d-Abstract.html) **MLSys 2022**. Andrew Or, Haoyu Zhang, Michael None Freedman. _Princeton University_.
+    - [OneFlow: Redesign the Distributed Deep Learning Framework from Scratch](https://arxiv.org/abs/2110.15032) **arXiv 2021**. Jinhui Yuan, Xinqi Li, Cheng Cheng, Juncheng Liu, Ran Guo, Shenghang Cai, Chi Yao, Fei Yang, Xiaodong Yi, Chuan Wu, Haoran Zhang, Jie Zhao. _OneFlow Research_.
 
 
 ## Compilers for AI chips
@@ -153,12 +166,6 @@ A list of awesome compilers and optimization techniques (applicable to compilers
 
 - Compilers for HPC Workloads on GPU
     - [Domain-Specific Multi-Level IR Rewriting for GPU: The Open Earth Compiler for GPU-accelerated Climate Simulation](https://dl.acm.org/doi/10.1145/3469030) **TACO 2021**. [code](https://github.com/spcl/open-earth-compiler). Tobias Gysi, Christoph Müller, Oleksandr Zinenko, Stephan Herhut, Eddie Davis, Tobias Wicky, Oliver Fuhrer, Torsten Hoefler, Tobias Grosser. _ETH Zurich_.
-
-- Distributed Optimization
-    - [DISTAL: The Distributed Tensor Algebra Compiler](http://tensor-compiler.org/files/yadav-pldi22-distal.pdf) **PLDI 2022**. Rohan Yadav, Alex Aiken, and Fredrik Kjolstad. _Stanford University_.
-    - [Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](https://arxiv.org/abs/2201.12023) **OSDI 2022**. Lianmin Zheng, Zhuohan Li, Hao Zhang, Yonghao Zhuang, Zhifeng Chen, Yanping Huang, Yida Wang, Yuanzhong Xu, Danyang Zhuo, Joseph E. Gonzalez, Ion Stoica. _UC Berkeley_
-    - [VirtualFlow: Decoupling Deep Learning Models from the Underlying Hardware](https://proceedings.mlsys.org/paper/2022/hash/2723d092b63885e0d7c260cc007e8b9d-Abstract.html) **MLSys 2022**. Andrew Or, Haoyu Zhang, Michael None Freedman. _Princeton University_.
-    - [OneFlow: Redesign the Distributed Deep Learning Framework from Scratch](https://arxiv.org/abs/2110.15032) **arXiv 2021**. Jinhui Yuan, Xinqi Li, Cheng Cheng, Juncheng Liu, Ran Guo, Shenghang Cai, Chi Yao, Fei Yang, Xiaodong Yi, Chuan Wu, Haoran Zhang, Jie Zhao. _OneFlow Research_.
 
 - Loop program analysis and Nested data parallelism
     - [Uncovering Nested Data Parallelism and Data Reuse in DNN Computation with FractalTensor](https://dl.acm.org/doi/10.1145/3694715.3695961) **SOSP 2024**. Siran Liu, Chengxiang Qi, Ying Cao, Chao Yang, Weifang Hu, Xuanhua Shi, Fan Yang, Mao Yang. _Microsoft Research_.
